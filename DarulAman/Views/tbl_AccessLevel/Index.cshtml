@@ -1,0 +1,38 @@
+﻿@model IEnumerable<DarulAman.Models.tbl_AccessLevel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1 class="customh1">Index</h1>
+<center>
+    <p>
+        <a href="@Url.Action("Create", "tbl_AccessLevel")" class="btn btn-lg fa fa-pencil customp1">Asign Access</a>
+
+    </p>
+</center>
+<table class="table table-borderl table-active">
+    <tr>
+        <th class="customth">
+            ACCESS_LEVEL
+        </th>
+        <th class="customth"></th>
+    </tr>
+
+    @foreach (var access in Model)
+    {
+        <tr>
+            <td>
+                @access.ACCESS_LEVEL
+            </td>
+            <td align="center">
+                <a class="btn btn-primary fa fa-edit" href="@Url.Action("Edit", "tbl_AccessLevel", new { id=access.ID }) "></a>|
+                <a class="btn btn-success fa fa-book" href="@Url.Action("Details", "tbl_AccessLevel", new { id=access.ID }) "></a>|
+                <a class="btn btn-danger fa fa-trash" href="@Url.Action("Delete", "tbl_AccessLevel", new { id=access.ID }) "></a>
+
+            </td>
+
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,28 @@
+﻿@model DarulAman.Models.tbl_AccessLevel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h1 class="customh1">Details</h1>
+
+<div>
+
+    <hr />
+    <dl class="d-lg-inline-flex" style="margin:0 0 3rem 0">
+        <dt class="customdt">
+            ACCESS_LEVEL
+        </dt>
+
+        <dd calss="customdd">
+            @Html.DisplayFor(model => model.ACCESS_LEVEL)
+        </dd>
+
+    </dl>
+</div>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10" align="center">
+        <a href="@Url.Action("Index","tbl_AccessLevel")" class="indexback">Back to Index</a> |
+        <button class="custombtn">Edit</button>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+﻿@import url('http://fonts.googleapis.com/css2?family=Heebo:wght@800display=swap');
+
+.body {
+    background: linear-gradient(270deg, rgba(68,55,25,1) 0%, rgba(241,210,52,1) 100%);
+    background-size: cover;
+    opacity: 0.72;
+    top: 25%;
+    bottom: 25%;
+    margin: 0;
+    padding: 0;
+}
+.contain {
+    padding: 5rem 25px 5rem 25px;
+    color: white;
+    position: center !important;
+    margin-left: 30%;
+    top: 5%;
+    left: 30%;
+    width: 45%;
+}
+
+
+
+    .contain h1  {
+        width: 50%;
+        margin-bottom: 18px;
+        padding: 13px 0;
+        color: white;
+        font-size:25px;
+        display: inline-block;
+        font-weight:bolder;
+        
+    }
+
+.boz {
+    width: 100%;
+    margin: 23px 0px;
+    font-weight: bold;
+    border-bottom: 2px solid  #FDBE33;
+}
+
+    .boz input {
+        background: none;
+        width: 75%;
+        padding: 5px 10px;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        color: white;
+    }
+.boz i {
+    text-align: center;
+    width: 25px;
+    color: white;
+}
+
+
+.btm {
+    margin: 10px 10px 10px 10px;
+    padding: 7px 15px;
+ outline: none;
+    font-size:20px;
+    color: #FDBE33;
+    background: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: white;
+    text-align: center;
+    
+}
+
+    .btm:hover {
+        color: white;
+        background: #FDBE33;
+    }
+    
+
+.message {
+    font-weight: bolder;
+    color: red;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+.rem {
+    color: white;
+    font-size: small;
+    text-align: center;
+    padding:0 2px 0 0;
+}
+
+    .rem:hover {
+        color: #FDBE33;
+        font-size: large;
+        text-align: center;
+        text-decoration: underline;
+    }

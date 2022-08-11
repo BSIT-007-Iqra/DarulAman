@@ -1,0 +1,81 @@
+﻿@model DarulAman.Models.tbl_Admin
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h1 class="customh1">Delete</h1>
+<h5 class="customdel">Are You sure you want to Delete this?</h5>
+<div>
+    <hr />
+    <dl class="d-lg-inline-flex" style="margin:0 0 5rem 0">
+        <dt class="Customdt">
+            ACCESS_LEVEL
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_AccessLevel.ACCESS_LEVEL)
+        </dd>
+
+        <dt class="Customdt">
+            FIRST NAME
+        </dt>
+
+        <dd class="customdd">
+            @Html.DisplayFor(model => model.FIRST_NAME)
+        </dd>
+
+        <dt class="Customdt">
+            LAST_NAME
+        </dt>
+
+        <dd class="customdd">
+            @Html.DisplayFor(model => model.LAST_NAME)
+        </dd>
+
+        <dt class="Customdt">
+            EMAIL
+        </dt>
+
+        <dd class="customdd">
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt class="Customdt">
+            PASSWORD
+        </dt>
+
+        <dd class="customdd">
+            @Html.DisplayFor(model => model.PASSWORD)
+        </dd>
+
+        <dt class="Customdt">
+            ADDRESS
+        </dt>
+
+        <dd class="customdd">
+            @Html.DisplayFor(model => model.ADDRESS)
+        </dd>
+
+        <dt class="Customdt">
+            CONTACT
+        </dt>
+
+        <dd class="customdd">
+            @Html.DisplayFor(model => model.CONTACT)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10" align="center">
+                <a href="@Url.Action("Index","tbl_Admin")" class="indexback">Back to Index</a> |
+                <button class="custombtn">Delete</button>
+            </div>
+        </div>
+    }
+</div>

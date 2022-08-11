@@ -1,0 +1,74 @@
+﻿@model IEnumerable<DarulAman.Models.tbl_Admin>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1 class="customh1">Index</h1>
+<center>
+    <p>
+        <a href="@Url.Action("Create", "tbl_Admin")" class="btn btn-lg fa fa-pencil customp1"> Create</a>
+
+    </p>
+</center>
+<table class="table table-borderl table-active">
+    <tr>
+        <th class="customth">
+            ACCESS_LEVEL
+        </th>
+        <th class="customth">
+            FIRST_NAME
+        </th>
+        <th class="customth">
+            LAST_NAME
+        </th>
+        <th class="customth">
+            EMAIL
+        </th>
+        <th class="customth">
+            PASSWORD
+        </th>
+        <th class="customth">
+            ADDRESS
+        </th>
+        <th class="customth">
+            CONTACT
+        </th>
+        <th class="customth"></th>
+    </tr>
+
+    @foreach (var admin in Model)
+    {
+        <tr>
+            <td>
+                @admin.tbl_AccessLevel.ACCESS_LEVEL
+            </td>
+            <td>
+                @admin.FIRST_NAME
+            </td>
+            <td>
+                @admin.LAST_NAME
+            </td>
+            <td>
+                @admin.EMAIL
+            </td>
+            <td>
+                @admin.PASSWORD
+            </td>
+            <td>
+                @admin.ADDRESS
+            </td>
+            <td>
+                @admin.CONTACT
+            </td>
+            <td align="center">
+                <a class="btn btn-primary fa fa-edit" href="@Url.Action("Edit", "tbl_Admin", new { id=admin.ADMIN_ID}) "></a>|
+                <a class="btn btn-success fa fa-book" href="@Url.Action("Details", "tbl_Admin", new { id=admin.ADMIN_ID }) "></a>|
+                <a class="btn btn-danger fa fa-trash" href="@Url.Action("Delete", "tbl_Admin", new { id=admin.ADMIN_ID }) "></a>
+
+            </td>
+        </tr>
+       
+    }
+
+</table>

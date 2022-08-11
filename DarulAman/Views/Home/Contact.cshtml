@@ -1,0 +1,56 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="col-12">
+                <a href="@Url.Action("IndexCustomer","Home")">Home</a>
+                <a href="@Url.Action("Contact","Home")">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Contact Start -->
+<div class="contact">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Get In Touch</p>
+            <h2>Contact for any query</h2>
+        </div>
+        <div class="contact-img">
+            <img src="~/Content/Customer/img/DarulAman2.png" style="background-size:cover;aspect-ratio:auto" alt="Image">
+        </div>
+        <div class="contact-form">
+            <div id="success"></div>
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                <div class="control-group">
+                    <input type="text" class="form-control" id="name" placeholder="Your First Name" required="required" data-validation-required-message="Please Enter Your First Name" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" id="name" placeholder="Your Last Name" required="required" data-validation-required-message="Please Enter Your Last Name" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please Enter Your Email" />
+                    <p class="help-block text-danger"></p>
+                </div>
+
+                <div class="control-group">
+                    <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please Enter Your Message"></textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div>
+                    <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->

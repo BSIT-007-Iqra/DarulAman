@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Login</h2>
+            </div>
+            <div class="col-12">
+                <a href="@Url.Action("IndexCustomer","Home")">Home</a>
+                <a href="@Url.Action("Login","Home")">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!---Login Form-->
+{<div class="container">
+
+
+    <div class="body">
+        <div class="contain">
+
+            <h1> <i class="fa fa-user text-center">Admin Login</i></h1>
+            <form name="form" id="form" action="/Home/Login/" method="post">
+                <div class="boz">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="Email" id="email" placeholder="Enter Your Email" required />
+                </div>
+                <div class="boz">
+                    <i class="fa fa-key"></i>
+                    <input type="password" name="Password" id="password" placeholder="Password" style="color:black" required />
+                </div>
+                <div>
+                    <label class="message">
+                        @ViewBag.Message
+                    </label>
+                </div>
+                <div>
+                    <center>
+                        <a href="" for="Forget" class="rem" style="color:white">Forget Password</a>
+
+                        <button type="submit" class="btm"><i class="fa fa-sign-in">Login</i></button>
+                    </center>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+}

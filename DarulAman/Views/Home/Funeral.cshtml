@@ -1,0 +1,136 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Funeral</h2>
+            </div>
+            <div class="col-12">
+                <a href="@Url.Action("IndexCustomer","Home")">Home</a>
+                <a href="@Url.Action("Funeral","Home")">Funeral</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<div class="section-header text-center">
+    <div class="carousel-text">
+        <h2 style=" color: #FDBE33">Hadith </h2>
+        <br /><br />
+        <center>
+            <p>'Uthman bin 'Affan (möge Allah mit ihm zufrieden sein) berichtete:<br />Der Gesandte Allahs (ﷺ) sagte:</p>
+
+            <p style="color:black;font-size:xx-large">
+                <b>   كُلُّ نَفْسٍ ذَآىٕقَةُ الْمَوْتِؕ وَاِنَّمَا تُوَفَّوْنَ اُجُوْرَكُمْ یَوْمَ الْقِیٰمَةِؕ فَمَنْ زُحْزِحَ عَنِ النَّارِ<br/> وَاُدْخِلَ الْجَنَّةَ فَقَدْ فَازَؕ وَمَا الْحَیٰوةُ الدُّنْیَاۤ اِلَّا مَتَاعُ الْغُرُوْرِ</b>
+            </p>
+            <p style="color:black">
+                Every soul will taste death, and you will only be given your [full] compensation on the Day of Resurrection. So he who is drawn away from the Fire and admitted to Paradise has attained [his desire]. 
+                And what is the life of this world except the enjoyment of delusion..<br />
+                <b>[Al-Bukhari].</b>
+            </p>
+        </center>
+    </div><hr />
+</div>
+<div class="single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-content">
+                    <div class="carousel-text">
+                        <h2 style="color: #FDBE33; font-weight: bold ">Bestattung </h2><br />
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+
+                                <div class="text-widget">
+
+                                    <h4 style="padding: 8px 0 8px 0; font-size: larger; color:darkred;font-weight:bold" >Darul Aman wird alle Kosten übernehmen, wenn jemand nicht in der Lage ist zu zahlen.</h4><br />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><hr />
+                    <div class="sidebar-widget">
+                        <h2 class="widget-title"><b></b></h2>
+                        <div class="text-widget">
+                            <p>
+                                <ul style="color:black">
+                                    <li style="padding: 8px 0 8px 0;font-size:larger"> Totenwaschung.</li>
+
+                                    <li style="padding: 8px 0 8px 0; font-size: larger">Islamisches Begräbnisgebet</li>
+                                    <li style="padding: 8px 0 8px 0; font-size: larger ">
+                                        Beerdigung
+                                    </li>
+
+                                    </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+
+                <div class="comment-form">
+                    <h2>Enter Information...</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name" style="color:black"> First Name * </label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name" style="color:black"> Last Name *</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="tel" style="color:black">Tel# *</label>
+                            <input type="tel" class="form-control" id="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="color:black">Email *</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Origin" style="color:black">Origin *</label>
+                            <input type="text" class="form-control" id="Origin">
+                        </div>
+                        <div class="form-group">
+                            <label for="website" style="color:black">Date *</label>
+                            <input type="date" class="form-control" id="Guardian">
+                        </div>
+                        <div class="form-group">
+                            <p style="color:black">Gender *</p>
+                            <div>
+
+                                <input type="radio" id="female" class="custom-radio" name="Gender" value="HTML" required>&nbsp;
+                                <label for="female">Female</label><br>
+                                <input type="radio" id="male" name="Gender" class="custom-radio" value="CSS" required>&nbsp;
+                                <label for="male">Male</label><br>
+                                <input type="radio" id="others" name="Gender" class="custom-radio" value="JavaScript" required>&nbsp;
+                                <label for="others">Others</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" style="color:black">Message *</label>
+                            <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" required />
+                            <span>
+                                I Accept the <a href="#" style="color:#FDBE33 "><b>Terms and Conditions</b></a>
+                            </span>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-custom btn-block">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

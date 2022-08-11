@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DarulAman</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+
+    <link href="~/Content/Customer/img/Logoicon.ico" rel="icon">
+
+
+    <!-- Custom CSS-->
+    <style>
+        /**************/
+        /*** login form CSS ***/
+        /**************/
+        /*---------------------- login form ------------------------------- */
+        .form2 {
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        .Form-word {
+            float: left;
+            color: #FDBE33;
+            font-size: 20px;
+        }
+        /**************************************/
+        /******** Radio btn Donate CSS ********/
+        /**************************************/
+        /*---------------------- Radio buttons Donate ------------------------------- */
+       
+        .color-word {
+            color: white;
+        }
+
+
+        .custom-radio[type="radio"] {
+            appearance: none;
+            border: 1px solid #d3d3d3;
+            width: 18px;
+            height: 18px;
+            content: none;
+            outline: none;
+            border-radius: 100%;
+            margin: 0;
+            margin-left:30px;
+        }
+
+            .custom-radio[type="radio"]:checked {
+                appearance: none;
+                border-radius: 100%;
+                outline: none;
+                padding: 0;
+                content: none;
+                border: none;
+            }
+
+                .custom-radio[type="radio"]:checked::before {
+                    position: absolute;
+                    background: #0c1332;
+                    accent-color: blue;
+                    border-radius: 100%;
+                    color: white !important;
+                    content: "\00A0\2713\00A0" !important;
+                    border: 1px solid #d3d3d3;
+                    font-weight: bolder;
+                    font-size: 13px;
+                }
+        /*       drop down    */
+        .dropdown-menu li {
+            position: relative;
+            background-color: whitesmoke;
+            border-radius: 5px;
+        }
+
+        .dropdown-menu .dropdown-submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+
+        .dropdown-menu .dropdown-submenu-left {
+            right: 100%;
+            left: auto;
+        }
+
+        .dropdown-menu li .dropdown-item:hover {
+            background-color: #FDBE33;
+            color: black;
+            font-size: large;
+            font-weight: bolder
+        }
+
+
+        .dropdown-menu > li:hover > .dropdown-submenu {
+            display: grid;
+        }
+    </style>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="~/Content/Customer/lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="~/Content/Customer/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="~/Content/Customer/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="~/Content/Customer/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="top-bar-left">
+
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <p>+123 456 7890</p>
+                        </div>
+
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <p>info@example.com</p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-center">
+                        <div>
+                            <a href="@Url.Action("Registration","Home")">
+                                <input type="submit" style="padding:0px 7px 15px 12px;color:white" value=" To meet your Community click here" class="btn btn-custom btn-block">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="text">
+
+                            <i class="fa fa-globe fa-caret-down"> </i>
+
+                            <select style="border:none;background-color:transparent;color:white;padding:5px 5px 5px 5px;">
+
+                                <option style="color:black">Translator</option>
+                                <option style="color: black" id="mydiv">EngLish</option>
+                                <option style="color: black">Urdu</option>
+                                <option style="color: black">German</option>
+
+                            </select>
+
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <p>Frankfurt, Germany</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Bar End -->
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="~/Content/Customer/img/Logo.png" />
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="@Url.Action("IndexCustomer","Home")" class="nav-item nav-link active">Home</a>
+                    <a href="@Url.Action("Mosque","Home")" class="nav-item nav-link">Mosque</a>
+                    <a href="@Url.Action("Prayer","Home")" class="nav-item nav-link">Prayers</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sub-Projects</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="single.html" class="dropdown-item" data-toggle="dropdown">Darul-Uloom<i class="fa fa-caret-down" style="padding:0 0 0 34px"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li><a href="@Url.Action("Teaching","Home")" class="dropdown-item">Teaching Quran & Hadith</a></li>
+                                    <li><a href="@Url.Action("School","Home")" class="dropdown-item">Islamic School</a></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="@Url.Action("Islamiclibrary","Home")" class="dropdown-item">Islamic Services<i class="fa fa-caret-down" style="padding:0 0 0 4px"></i></a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li><a href="@Url.Action("Translate","Home")" class="dropdown-item">Translation Service</a></li>
+                                    <li><a href="@Url.Action("Funeral","Home")" class="dropdown-item">Islamic Funeral</a></li>
+                                    <li><a href="@Url.Action("Marriage","Home")" class="dropdown-item"> Marriage Ceremany</a></li>
+                                    <li><a href="@Url.Action("IndexCustomer","Home")" class="dropdown-item">Halal Slaughter House</a></li>
+                                    <li><a href="@Url.Action("IndexCustomer","Home")" class="dropdown-item"> GYM</a></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="@Url.Action("Islamlibrary","Home")" class="dropdown-item">Islamic Library</a>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <a href="@Url.Action("Event","Home")" class="nav-item nav-link">Events</a>
+                    <a href="@Url.Action("Volunteer","Home")" class="nav-item nav-link">Volunteer</a>
+                    <a href="@Url.Action("Team","Home")" class="nav-item nav-link">Team</a>
+                    <a href="@Url.Action("About","Home")" class="nav-item nav-link">About</a>
+                    <a href="@Url.Action("Contact","Home")" class="nav-item nav-link">Contact</a>
+                    <a href="@Url.Action("Donate","Home")" class="btn btn-warning">Donate</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    @RenderBody()
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Our Head Office</h2>
+                        <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                        <p><i class="fa fa-envelope"></i>info@example.com</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Popular Links</h2>
+                        <a href="@Url.Action("About","Home")">About Us</a>
+                        <a href="@Url.Action("Contact","Home")">Contact Us</a>
+
+                        <a href="@Url.Action("Event","Home")">Upcoming Events</a>
+                        <a href="@Url.Action("Team","Home")">Team</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Useful Links</h2>
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-newsletter">
+                        <h2>Newsletter</h2>
+                        <form>
+                            <input class="form-control" placeholder="Email goes here">
+                            <button class="btn btn-custom">Submit</button>
+                            <label>Don't worry, we don't spam!</label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Designed By <a href="">DarulAman</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/Customer/lib/easing/easing.min.js"></script>
+    <script src="~/Content/Customer/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/Content/Customer/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/Content/Customer/lib/counterup/counterup.min.js"></script>
+    <script src="~/Content/Customer/lib/parallax/parallax.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="~/Content/Customer/mail/jqBootstrapValidation.min.js"></script>
+    <script src="~/Content/Customer/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="~/Content/Customer/js/main.js"></script>
+    <script type="text/javascript">
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read More...";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read Less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>
+

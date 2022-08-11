@@ -1,0 +1,151 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Marriage</h2>
+            </div>
+            <div class="col-12">
+                <a href="@Url.Action("IndexCustomer","Home")">Home</a>
+                <a href="@Url.Action("Marriage","Home")">Marriage</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<div class="section-header text-center">
+    <div class="carousel-text">
+        <h2 style=" color: #FDBE33">Quotation From Quran </h2>
+        <br /><br />
+        <center>
+            <p style="color:black;font-size:xx-large;padding-bottom:10px">
+                <b>   وَأَنكِحُوا۟ ٱلْأَيَـٰمَىٰ مِنكُمْ وَٱلصَّـٰلِحِينَ مِنْ عِبَادِكُمْ وَإِمَآئِكُمْ ۚ إِن يَكُونُوا۟ فُقَرَآءَ يُغْنِهِمُ ٱللَّهُ مِن فَضْلِهِۦ ۗ وَٱللَّهُ وَٰسِعٌ عَلِيمٌۭ ٣٢</b>
+            </p>
+            <p style="color: black; font-size: large">
+                Und verheiratet die noch ledigen (Männer und Frauen) unter euch und die
+                Rechtschaffenen von euren Sklaven und euren Sklavinnen. Wenn sie arm sind, wird
+                Allah sie durch Seine Huld reich machen. Allah ist Allumfassend und Allwissend.<br />
+                <b>(Quran 24:32)</b>
+            </p>
+        </center>
+    </div><hr />
+</div>
+<div class="single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-content">
+                    <div class="carousel-text">
+                        <h2 style=" color: #FDBE33">Hochzeit (Nikkah) </h2><br />
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+
+                                <div class="text-widget">
+                                    <p>
+                                        <ul style="font-size:large;color:black">
+                                            <li>Machen Sie Ehebruch schwer und Nikkah leicht</li>
+                                            <li>Organisieren Sie die Hochzeitszeremonien in Masjid.</li>
+                                            <li>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae
+                                                scel
+                                                <span id="dots">...</span>
+                                                <span id="more">
+                                                    erisque enim ligula
+                                                    venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+                                                    auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+                                                    Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+                                                    In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                                                    Donec vitae dui eget tellus gravida venenatis. Integer fringilla
+                                                    congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <a class="btn btn-link active" data-toggle="pill" style="color: #FDBE33; font-size: large; 
+                                            align-content: initial" onclick="myFunction()" id="myBtn"><u>Read More...</u></a>
+
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><hr />
+                    <div class="sidebar-widget">
+                        <h2 class="widget-title"><b></b></h2>
+                        <div class="text-widget">
+                            <p>
+                                <ul style="color:black" >
+                                    <li style="padding: 8px 0 8px 0"> Our Mosque provides Marriage facility but the following<u ><b> Requirements</b></u> must be fulfilled...</li>
+
+                                    <li style="padding: 8px 0 8px 0 ">We need a <b>valid</b> License and  a <b>valid</b> Germany <br /><u>State Certificate of  Marriage</u></li>
+                                    <li style="padding: 8px 0 8px 0 ">
+                                        For More Information about German Marriage Certificate: <br />
+                                        <a class="btn btn-warning" href="@Url.Action("Donate","Home")" style="margin: 8px 0 8px 0 ">Click Here</a>
+                                    </li>
+
+                                    <li style="color: #FDBE33; font-size: large;padding: 15px 0 15px 0"><b><u>Requirements</u></b></li>
+                                    <li style="padding: 8px 0 8px 0 ">Two witness’s from the groom’s side and one witness from the bride.</li>
+                                    <li style="padding: 8px 0 8px 0 ">You need <b>valid</b> Identification card and mahr (bride gift) should be a  mutual understanding between the bride and groom.</li>
+                                    <li style="padding: 8px 0 8px 0 ">Darul Aman Mosque is not providing witnesses.</li>
+                                    <li style="padding: 8px 0 8px 0 ">The fee to perform Nikah ( Marriage Ceremony) is <b>$350</b> .</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+
+                <div class="comment-form">
+                    <h2>Enter Information...</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name" style="color:black"> First Name * </label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name" style="color:black"> Last Name *</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="tel" style="color:black">Tel# *</label>
+                            <input type="tel" class="form-control" id="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="color:black">Email *</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Origin" style="color:black">Origin *</label>
+                            <input type="text" class="form-control" id="Origin">
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Date *</label>
+                            <input type="date" class="form-control" id="Gardian">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" style="color:black">Message *</label>
+                            <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" required />
+                            <span>
+                                I Accept the <a href="#" style="color:#FDBE33 "><b>Terms and Conditions</b></a>
+                            </span>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <input type="submit" value="Agree" class="btn btn-custom">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

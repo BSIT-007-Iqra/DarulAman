@@ -1,0 +1,131 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutCustomer.cshtml";
+}
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Teaching Quran and Hadith</h2>
+            </div>
+            <div class="col-12">
+                <a href="@Url.Action("IndexCustomer","Home")">Home</a>
+                <a href="@Url.Action("Teaching","Home")">Quran & Hadith</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-header text-center">
+    <div class="carousel-text">
+        <h2 style=" color: #FDBE33">Hadith </h2>
+        <br /><br />
+        <center>
+            <p>
+                'Uthman bin 'Affan (May Allah be pleased with him) reported:
+                The Messenger of Allah (ﷺ) said:
+            </p>
+
+            <p style="color:black;font-size:xx-large">
+                <b>   خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ‏</b>
+            </p>
+            <p style="color:black">
+                “The best of you are those who learn <br />the Qur’an and teach it to others.”<br />
+                <b>[Al-Bukhari].</b>
+            </p>
+        </center>
+    </div><hr />
+</div>
+
+<div class="single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-content">
+                    <div class="carousel-text">
+                        <h2 style=" color: #FDBE33">Moschee (Eine Grundschule) </h2><br />
+                        <div class="sidebar">
+                            <div class="sidebar-widget">
+
+                                <div class="text-widget">
+                                    <p>
+                                        <ul style="font-size:x-large;color:black">
+                                            <li> Koran & Hadith (Ein Lebenshandbuch)</li>
+                                            <li>Getrennte Lerneinheiten für Frauen und Männer.</li>
+
+                                            <li>Islamische Schule für Jungen und Mädchen</li>
+                                        </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><hr />
+
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+
+                <div class="comment-form">
+                    <center> <h2 style="color:orange">Enter Information</h2></center><br />
+                    <form>
+                        <div class="form-group">
+                            <label for="name" style="color:black"> First Name *</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name" style="color:black"> Last Name *</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="tel#" style="color:black">ID *</label>
+                            <input type="text" class="form-control" id="id">
+                        </div>
+                         <div class="form-group">
+                            <label for="tel#" style="color:black">Tel# *</label>
+                            <input type="tel" class="form-control" id="tel#">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="color:black">Email *</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="Gender" style="color:black">Gender *</label>
+                            <br />
+                            <div>
+                                <p>Please select your Gender:</p>
+                                <input type="radio" id="html" class="custom-radio" name="fav_language" value="HTML">
+                                <label for="html">Male</label><br>
+                                <input type="radio" id="css" name="fav_language" class="custom-radio" value="CSS">
+                                <label for="css">Female</label><br>
+                                <input type="radio" id="javascript" name="fav_language" class="custom-radio" value="JavaScript">
+                                <label for="javascript">Other</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Origin" style="color:black">Origin *</label>
+                            <input type="text" class="form-control" id="Origin">
+                        </div>
+                        <div class="control-group">
+                            <label for="Address" style="color:black">Address *</label>
+                            <textarea class="form-control" id="Address" required="required"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="website" style="color:black">Guardian *</label>
+                            <input type="url" class="form-control" id="Guardian">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" style="color:black">Message *</label>
+                            <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-custom">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
